@@ -39,7 +39,7 @@ func Serve(router *mux.Router, cfg *config.Config, store *storage.Storage, pool 
 	uiRouter.HandleFunc("/bookmarklet", handler.bookmarklet).Name("bookmarklet").Methods("GET")
 
 	// Unread page.
-	uiRouter.HandleFunc("/mark-all-as-read", handler.markAllAsRead).Name("markAllAsRead").Methods("GET")
+	// uiRouter.HandleFunc("/mark-all-as-read", handler.markAllAsRead).Name("markAllAsRead").Methods("GET")
 	uiRouter.HandleFunc("/unread", handler.showUnreadPage).Name("unread").Methods("GET")
 	uiRouter.HandleFunc("/unread/entry/{entryID}", handler.showUnreadEntryPage).Name("unreadEntry").Methods("GET")
 
