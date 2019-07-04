@@ -1335,11 +1335,6 @@ var templateViewsMap = map[string]string{
                     {{ t "menu.mark_page_as_read" }}
             </a>
         </li>
-        <li>
-            <a data-link-state="flip"
-               data-label-new-state="{{ t "menu.mark_all_as_read_wip" }}"
-               href="{{ route "markAllAsRead" }}">{{ t "menu.mark_all_as_read" }}</a>
-        </li>
     </ul>
     {{ end }}
 </section>
@@ -1472,6 +1467,6 @@ var templateViewsMapChecksums = map[string]string{
 	"search_entries":      "d71849a4f2b0573c7c76ad0ea941812009e9f022de60895987a781d3e6f08a01",
 	"sessions":            "1b3ec0970a4111b81f86d6ed187bb410f88972e2ede6723b9febcc4c7e5fc921",
 	"settings":            "bc04faf83dd977306825973375954600bd014619340188e1243fd9e2f5d5e1a9",
-	"unread_entries":      "9bfe0223d4dc9b6179e4d35758be644138d7b1e28616ddc1f9df6efab6061ab2",
+	"unread_entries":      "b76b8f2e95af84e5b353bd4f121c3d5de1e094fff70ebf5543e1eaca88fd4967",
 	"users":               "4b56cc76fbcc424e7c870d0efca93bb44dbfcc2a08b685cf799c773fbb8dfb2f",
 }
