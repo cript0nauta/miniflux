@@ -209,7 +209,15 @@ var templateViewsMap = map[string]string{
     <ul>
     {{ if .entries }}
         <li>
-            <a href="#" data-on-click="markPageAsRead">{{ t "menu.mark_page_as_read" }}</a>
+            <a href="#"
+                data-confirm="true"
+                data-label-question="{{ t "confirm.question" }}"
+                data-label-yes="{{ t "confirm.yes" }}"
+                data-label-no="{{ t "confirm.no" }}"
+                data-label-loading="{{ t "confirm.loading" }}"
+                data-mark-page-as-read="true">
+                    {{ t "menu.mark_page_as_read" }}
+            </a>
         </li>
     {{ end }}
     {{ if .showOnlyUnreadEntries }}
@@ -247,7 +255,15 @@ var templateViewsMap = map[string]string{
         {{ if .entries }}
         <ul>
             <li>
-                <a href="#" data-on-click="markPageAsRead">{{ t "menu.mark_page_as_read" }}</a>
+                <a href="#"
+                    data-confirm="true"
+                    data-label-question="{{ t "confirm.question" }}"
+                    data-label-yes="{{ t "confirm.yes" }}"
+                    data-label-no="{{ t "confirm.no" }}"
+                    data-label-loading="{{ t "confirm.loading" }}"
+                    data-mark-page-as-read="true">
+                        {{ t "menu.mark_page_as_read" }}
+                </a>
             </li>
         </ul>
         {{ end }}
@@ -698,7 +714,15 @@ var templateViewsMap = map[string]string{
     <ul>
         {{ if .entries }}
         <li>
-            <a href="#" data-on-click="markPageAsRead">{{ t "menu.mark_page_as_read" }}</a>
+            <a href="#"
+                data-confirm="true"
+                data-label-question="{{ t "confirm.question" }}"
+                data-label-yes="{{ t "confirm.yes" }}"
+                data-label-no="{{ t "confirm.no" }}"
+                data-label-loading="{{ t "confirm.loading" }}"
+                data-mark-page-as-read="true">
+                    {{ t "menu.mark_page_as_read" }}
+            </a>
         </li>
         {{ end }}
         {{ if .showOnlyUnreadEntries }}
@@ -762,7 +786,15 @@ var templateViewsMap = map[string]string{
         {{ if .entries }}
         <ul>
             <li>
-                <a href="#" data-on-click="markPageAsRead">{{ t "menu.mark_page_as_read" }}</a>
+                <a href="#"
+                    data-confirm="true"
+                    data-label-question="{{ t "confirm.question" }}"
+                    data-label-yes="{{ t "confirm.yes" }}"
+                    data-label-no="{{ t "confirm.no" }}"
+                    data-label-loading="{{ t "confirm.loading" }}"
+                    data-mark-page-as-read="true">
+                        {{ t "menu.mark_page_as_read" }}
+                </a>
             </li>
         </ul>
         {{ end }}
@@ -1293,7 +1325,15 @@ var templateViewsMap = map[string]string{
     {{ if .entries }}
     <ul>
         <li>
-            <a href="#" data-on-click="markPageAsRead">{{ t "menu.mark_page_as_read" }}</a>
+            <a href="#"
+                data-confirm="true"
+                data-label-question="{{ t "confirm.question" }}"
+                data-label-yes="{{ t "confirm.yes" }}"
+                data-label-no="{{ t "confirm.no" }}"
+                data-label-loading="{{ t "confirm.loading" }}"
+                data-mark-page-as-read="true">
+                    {{ t "menu.mark_page_as_read" }}
+            </a>
         </li>
         <li>
             <a data-link-state="flip"
@@ -1327,7 +1367,15 @@ var templateViewsMap = map[string]string{
         {{ if .entries }}
         <ul>
             <li>
-                <a href="#" data-on-click="markPageAsRead">{{ t "menu.mark_page_as_read" }}</a>
+                <a href="#"
+                    data-confirm="true"
+                    data-label-question="{{ t "confirm.question" }}"
+                    data-label-yes="{{ t "confirm.yes" }}"
+                    data-label-no="{{ t "confirm.no" }}"
+                    data-label-loading="{{ t "confirm.loading" }}"
+                    data-mark-page-as-read="true">
+                        {{ t "menu.mark_page_as_read" }}
+                </a>
             </li>
         </ul>
         {{ end }}
@@ -1407,7 +1455,7 @@ var templateViewsMapChecksums = map[string]string{
 	"add_subscription":    "a0f1d2bc02b6adc83dbeae593f74d9b936102cd6dd73302cdbec2137cafdcdd9",
 	"bookmark_entries":    "609f4b2342152fe495a219a32f17a4528b01807d61f53cee0cbebf728be73c42",
 	"categories":          "642ee3cddbd825ee6ab5a77caa0d371096b55de0f1bd4ae3055b8c8a70507d8d",
-	"category_entries":    "07ff798025f8527de5351a89fd5fc51973c1ea6c56710b4f703cbae183fbcbb6",
+	"category_entries":    "8a6060a07274a3d78596412a901af5747fa16f89ad0c9a5f4d2d5faa937f080c",
 	"choose_subscription": "33c04843d7c1b608d034e605e52681822fc6d79bc6b900c04915dd9ebae584e2",
 	"create_category":     "6b22b5ce51abf4e225e23a79f81be09a7fb90acb265e93a8faf9446dff74018d",
 	"create_user":         "1e940be3afefc0a5c6273bbadcddc1e29811e9548e5227ac2adfe697ca5ce081",
@@ -1415,7 +1463,7 @@ var templateViewsMapChecksums = map[string]string{
 	"edit_feed":           "ab30c31a4385a7b16c54baa78bdcb93a57181ed1c5018ce097d7eb50673bb995",
 	"edit_user":           "f4f99412ba771cfca2a2a42778b023b413c5494e9a287053ba8cf380c2865c5f",
 	"entry":               "2ea9fee1ae5513ef1abb5923221c2ef1212e26d3bb651da66069ce8a336cbb7c",
-	"feed_entries":        "ba6a764d2784797629103500cc099178f29856dcfc95e59f0d134c32951cd3a4",
+	"feed_entries":        "b3e8e8631307ab0bae1a114d30ae5021a9cd4173c7dab78a506a78c1cca1b2fd",
 	"feeds":               "31acc253c547a6cce5710d72a6f6b3b396162ecd5e5af295b2cf47c1ff55bd06",
 	"history_entries":     "b65ca1d85615caa7c314a33f1cb997aa3477a79e66b9894b2fd387271ad467d2",
 	"import":              "8349e47a783bb40d8e9248b4771656e5f006185e11079e1c4680dd52633420ed",
@@ -1424,6 +1472,6 @@ var templateViewsMapChecksums = map[string]string{
 	"search_entries":      "d71849a4f2b0573c7c76ad0ea941812009e9f022de60895987a781d3e6f08a01",
 	"sessions":            "1b3ec0970a4111b81f86d6ed187bb410f88972e2ede6723b9febcc4c7e5fc921",
 	"settings":            "bc04faf83dd977306825973375954600bd014619340188e1243fd9e2f5d5e1a9",
-	"unread_entries":      "880018cbc59ec09b23dd800c4010fadad944d7023e0d36a3872c09b5d4952799",
+	"unread_entries":      "9bfe0223d4dc9b6179e4d35758be644138d7b1e28616ddc1f9df6efab6061ab2",
 	"users":               "4b56cc76fbcc424e7c870d0efca93bb44dbfcc2a08b685cf799c773fbb8dfb2f",
 }
